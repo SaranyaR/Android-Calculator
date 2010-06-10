@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+    <EditText android:id="@+id/input1" android:layout_width="156px"
+    android:layout_height="wrap_content" android:textSize="18sp"
+    android:layout_x="100px" android:layout_y="109px">
+</EditText>
+
+
+<EditText android:id="@+id/input2" android:layout_width="156px"
+android:layout_height="wrap_content" android:textSize="18sp"
+
+android:layout_x="500px" android:layout_y="109px">
+
+</EditText>
+<TextView android:id="@+id/operator" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_x="33px"
+                android:layout_y="77px">
+        </TextView>
+
+<EditText
+
+
+ android:id="@+id/solution" android:layout_width="156px"
+android:layout_height="wrap_content" android:textSize="18sp"
+
+android:layout_x="500px" android:layout_y="109px">
+
+</EditText>
+
+ 
+<Button
+    android:id="@+id/subButton"
+    android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+        android:layout_below="@id/solution"
+       
+     android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="sub" />
+<Button
+   android:id="@+id/addButton"
+   android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_below="@id/solution"
+        android:layout_toRightOf="@id/input1"
+        android:layout_alignTop="@id/subButton"
+        android:text="add" />
+   <Button
+   android:id="@+id/divButton"
+    android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+       
+     android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="div" />
+   <Button
+   android:id="@+id/mulButton"
+   android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/divButton"
+        android:layout_alignTop="@id/divButton"
+        android:text="mul" />
+   
+   <Button
+   android:id="@+id/equalsButton"
+   android:layout_width="10mm"
+   android:layout_height="10mm"
+   android:text="=" />
+   <Button
+   android:id="@+id/resetButton"
+   android:layout_width="10mm"
+   android:layout_height="10mm"
+   android:text="r" />
+   
+   
+
+   
+    
+</LinearLayout>
